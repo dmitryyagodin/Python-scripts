@@ -1,3 +1,6 @@
+# This script is based on the course 'Python for everybody' by Charles Severance
+# It parses XML file for iTunes data and saves it into sqlite database
+
 import xml.etree.ElementTree as ET
 import sqlite3
 
