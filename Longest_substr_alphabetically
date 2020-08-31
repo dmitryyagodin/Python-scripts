@@ -1,0 +1,23 @@
+s = 'azcbobobegghakl'
+r = []
+p = 0
+for i in range(len(s)):
+    l = []
+    t = []
+    for i in s:
+        if len(l) == 0 or ord(i) >= ord(l[-1]):
+            l.append(i)
+        else:
+            s = s[len(l):]
+            break
+    for i in s:
+        if len(t) == 0 or ord(i) >= ord(t[-1]):
+            t.append(i)
+        else:
+            s = s[len(t):]
+            break
+    if len(t) > len(l) and len(t) > len(r):
+        r = ''.join([str(elem) for elem in t])
+    if len(l) >= len(t) and len(l) > len(r):
+        r = ''.join([str(elem) for elem in l])
+print("Longest substring in alphabetical order is:", r)
