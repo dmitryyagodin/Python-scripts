@@ -1,6 +1,5 @@
 s = 'azcbobobegghakl'
 r = []
-p = 0
 for i in range(len(s)):
     l = []
     t = []
